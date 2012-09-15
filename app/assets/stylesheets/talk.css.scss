@@ -1,0 +1,53 @@
+// Place all the styles related to the talk controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap";
+.sem-talk {
+    border: 1px solid #E0E0E0;
+    width: 210px;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background-color: #F9F9F9;
+}
+
+#talk_mais_sobre {
+    height: 80px;
+    width:  654px;
+}
+
+#talk_nome, #talk_responsavel, #talk_assunto {
+    width: 654px;
+}
+
+.counter_sobre {
+    margin-left: 606px;
+}
+
+.new-talk {
+    width: 667px;
+}
+
+.index-talk {
+    border: 3px solid #E3E3E3;
+    border-radius: 3px;
+    padding-left: 3px;
+    margin-bottom: 10px;
+}
+
+body .navbar .brand {
+    padding: 0;
+    margin-left: -9px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.navbar .btn, .navbar .btn-group {
+    margin-top : 11px;
+    float: right;
+}
+
+body {
+    margin-top: 50px;
+}

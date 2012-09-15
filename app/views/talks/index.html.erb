@@ -1,0 +1,16 @@
+<% unless @talks.empty? %>
+<h2>Lista de TechTalks</h2>
+<div class="row">
+  <% @talks.each do |talk| %>
+  <div class="index-talk span5">
+    <%= talk.nome %><br />
+    <%= talk.responsavel %> <br />
+    <%= distance_of_time_in_words_to_now(talk.data) %> <br />
+    <%= talk.assunto %>
+    <%= talk.mais_sobre %>
+  </div>
+  <% end %>
+</div>
+<%else%>
+  <div class="sem-talk">Não existe TechTalk cadastrado.</div>
+<%end%>

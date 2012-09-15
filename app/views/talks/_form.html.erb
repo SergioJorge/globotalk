@@ -1,0 +1,33 @@
+<%= form_for(@talk) do |f| %>
+  <% if @talk.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@talk.errors.count, "error") %> prohibited this talk from being saved:</h2>
+      <ul>
+      <% @talk.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+    <%= f.label :nome %>
+    <%= f.text_field :nome %>
+  <div class="field">
+    <%= f.label :data %>
+    <%= f.date_select :data, order: [:day, :month, :year ], prompt: {day: "Dia", month: "Mês", year: "Ano"}, start_year: Time.now.year, end_year: Time.now.year%>
+  </div>
+  <div class="field">
+    <%= f.label :responsavel, "Responsável" %>
+    <%= f.text_field :responsavel %>
+  </div>
+  <div class="field">
+    <%= f.label :assunto %>
+    <%= f.text_field :assunto %>
+  </div>
+  <div class="field">
+    <label for="talk_mais_sobre">Sobre<span class="counter_sobre">140</span></label>
+    <%= f.text_area :mais_sobre %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Criar", class: "btn btn-primary" %>
+<% end %>

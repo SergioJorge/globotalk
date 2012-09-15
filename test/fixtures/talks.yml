@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  nome: TechTalk Teste 01
+  data: 2012-10-12 03:00:00
+  responsavel: Teste
+  assunto: Teste
+  mais_sobre: Techtalk de teste 1.
+
+two:
+  nome: TechTalk Teste 01
+  data: 2012-10-15 03:00:00
+  responsavel: Teste
+  assunto: Teste
+  mais_sobre: TechTalk de teste 2.
