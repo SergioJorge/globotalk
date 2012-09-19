@@ -130,6 +130,7 @@ DEPENDENCIES
   bootstrap-sass (~> 2.1.0.0)
   heroku (~> 2.31.2)
   jquery-rails
+  linecache19 (~> 0.5.12)
   mysql2
   rails (= 3.2.2)
   ruby-debug19
