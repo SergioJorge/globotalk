@@ -6,7 +6,7 @@
     border: 1px solid #E0E0E0;
     width: 210px;
     padding: 15px;
-    margin: 10px 0;
+    margin: 10px 0 10px 300px;
     border-radius: 3px;
     -webkit-border-radius: 3px;
     background-color: #F9F9F9;
@@ -15,6 +15,21 @@
 #talk_mais_sobre {
     height: 80px;
     width:  654px;
+}
+
+.error-blacktxt {
+    color: black;
+}
+
+#error_explanation {
+    border: 1px solid red;
+    width: 655px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+#error_explanation ul{
+    color: red;
 }
 
 #talk_nome, #talk_responsavel, #talk_assunto {
@@ -32,8 +47,75 @@
 .index-talk {
     border: 3px solid #E3E3E3;
     border-radius: 3px;
-    padding-left: 3px;
+    padding: 5px;
     margin-bottom: 10px;
+    height: 110px;
+}
+
+.talk-infos {
+    display: inline-block;
+}
+
+.talk-nome {
+    font-size: 18px;
+    font-weight: bold;
+    max-width: 170px;
+}
+
+.talk-data {
+    float: right;
+}
+
+.talk-sobre {
+    padding-top: 5px;
+    font-style: italic;
+    margin-bottom: 0;
+    margin-top: 3px;
+}
+
+.gravatar-img {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.gravatar-img > img {
+    width: 60px;
+}
+
+.talk-responsavel {
+    display: block;
+    color: #918E8E;
+}
+
+
+.footer {
+    background-color: #06D;
+    color: white;
+}
+
+#glb-rodape a {
+    color: white;
+}
+
+#glb-rodape li {
+    display: inline;
+}
+
+#glb-rodape ul {
+    list-style: none;
+}
+
+.rodape-menu-servicos {
+    padding: 10px 0;
+    font-size: 11px;
+}
+
+.rodape-menu-servicos span {
+float: left;
+}
+
+.rodape-menu-servicos ul {
+    float: right;
 }
 
 body .navbar .brand {
@@ -46,6 +128,10 @@ body .navbar .brand {
 .navbar .btn, .navbar .btn-group {
     margin-top : 11px;
     float: right;
+}
+
+.content {
+    min-height: 611px;
 }
 
 body {

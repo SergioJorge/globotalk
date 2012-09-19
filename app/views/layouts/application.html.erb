@@ -3,7 +3,7 @@
 <head>
   <title>Globotalk</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -20,12 +20,30 @@
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container content">
           <div class="row">
               <div class="span12">
                   <%= yield %>
               </div>
           </div>
       </div>
+      <footer>
+          <div class="footer">
+              <div class="container" id="glb-rodape">
+                      <div class="row">
+                        <div class="span12" id="glb-footer">
+                          <div class="rodape-menu-servicos">
+                            <span>© Copyright <%= Time.now.year%> Globo Comunicação e Participações S.A. <a href="http://www.globo.com/Globo.com/homev6/0,,PL0-0,00-POLITICA+DE+PRIVACIDADE.html">Política de Privacidade</a></span>
+                            <ul>
+                              <li><a href="https://login.globo.com/login/464">central globo.com</a></li>
+                              <li><a href="http://atendimento.globo.com/Portal/ISP/assineja/panfletos/panfleto_home_globo">assine a globo.com</a></li>
+                              <li><a href="http://www.globo.com/Portal/anuncie/glb_anuncie_panfleto">anuncie conosco</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+              </div>
+          </div>
+      </footer>
 </body>
 </html>

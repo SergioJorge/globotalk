@@ -20,11 +20,13 @@ class TalksController < ApplicationController
   end
 
   def edit
+    #not implementd yet
     @talk = Talk.find(params[:id])
     respond_with @talk
   end
   
   def update
+    #not implementd yet
     @talk = Talk.find(params[:id])
     if @talk.update_attributes(params[:talk])
       respond_with @talk

@@ -4,12 +4,12 @@ one:
   nome: TechTalk Teste 01
   data: 2012-10-12 03:00:00
   responsavel: Teste
-  assunto: Teste
+  gravatar_email: teste01@teste.com
   mais_sobre: Techtalk de teste 1.
 
 two:
-  nome: TechTalk Teste 01
+  nome: TechTalk Teste 02
   data: 2012-10-15 03:00:00
   responsavel: Teste
-  assunto: Teste
+  gravatar_email: teste02@teste.com
   mais_sobre: TechTalk de teste 2.

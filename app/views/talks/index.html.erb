@@ -3,11 +3,18 @@
 <div class="row">
   <% @talks.each do |talk| %>
   <div class="index-talk span5">
-    <%= talk.nome %><br />
-    <%= talk.responsavel %> <br />
-    <%= distance_of_time_in_words_to_now(talk.data) %> <br />
-    <%= talk.assunto %>
-    <%= talk.mais_sobre %>
+    <span class="talk-data">
+      <%= distance_of_time_in_words_to_now(talk.data) %>
+    </span>
+    <%talk.gravatar_email%>
+      <div class="gravatar-img"><%= image_tag avatar_url(talk)%></div>
+    <p class="talk-infos">
+      <span class="talk-nome">
+        <%= talk.nome %>
+      </span>
+      <span class="talk-responsavel">por <%= talk.responsavel %></span>
+    </p>
+    <p class="talk-sobre"><%= talk.mais_sobre %></p>
   </div>
   <% end %>
 </div>

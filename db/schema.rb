@@ -11,16 +11,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120911200314) do
+ActiveRecord::Schema.define(:version => 20120917215211) do
 
   create_table "talks", :force => true do |t|
     t.string   "nome"
-    t.datetime "data"
+    t.date     "data"
     t.string   "responsavel"
-    t.text     "assunto"
     t.text     "mais_sobre"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+    t.string   "gravatar_email"
   end
 
 end

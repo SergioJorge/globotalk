@@ -4,7 +4,7 @@
       <h2><%= pluralize(@talk.errors.count, "error") %> prohibited this talk from being saved:</h2>
       <ul>
       <% @talk.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
+        <li><span class="error-blacktxt"><%= msg %></span></li>
       <% end %>
       </ul>
     </div>
@@ -21,13 +21,16 @@
     <%= f.text_field :responsavel %>
   </div>
   <div class="field">
-    <%= f.label :assunto %>
-    <%= f.text_field :assunto %>
+    <%= f.label :gravatar_email %>
+    <%= f.text_field :gravatar_email %>
   </div>
   <div class="field">
-    <label for="talk_mais_sobre">Sobre<span class="counter_sobre">140</span></label>
-    <%= f.text_area :mais_sobre %>
+    <label for="talk_mais_sobre">Sobre<span class="counter_sobre"></span></label>
+    <%= f.text_area :mais_sobre  %>
   </div>
   <div class="actions">
     <%= f.submit "Criar", class: "btn btn-primary" %>
+    <%= link_to 'Voltar', talks_path, class: "btn btn-lista-adicionar" %>
+  </div>
 <% end %>
+<%= javascript_include_tag "talk" %>
