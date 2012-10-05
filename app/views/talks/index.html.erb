@@ -21,7 +21,7 @@
       </span>
       <span class="talk-responsavel">por <%= talk.responsavel %></span>
     </p>
-    <p class="talk-sobre"><%= talk.mais_sobre %></p>
+    <p class="talk-sobre"><%= talk.mais_sobre.html_safe %></p>
   </div>
   <% end %>
 </div>

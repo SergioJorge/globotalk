@@ -70,29 +70,29 @@ ptBr:
         one: 'menos de 1 segundo'
         other: 'menos de %{count} segundos'
       x_seconds:
-        one: '1 dia'
-        other: '1 dia'
+        one: 'hoje'
+        other: 'hoje'
       less_than_x_minutes:
-        one: '1 dia'
-        other: '1 dia'
+        one: 'hoje'
+        other: 'hoje'
       x_minutes:
-        one: '1 dia'
-        other: '1 dia'
+        one: 'hoje'
+        other: 'hoje'
       about_x_hours:
-        one: '1 dia'
-        other: '1 dia'
+        one: 'hoje'
+        other: 'hoje'
       x_days:
         one: '1 dia'
         other: '%{count} dias'
       about_x_months:
-        one: 'aproximadamente 1 mês'
-        other: 'aproximadamente %{count} meses'
+        one: '1 mês'
+        other: '%{count} meses'
       x_months:
         one: '1 mês'
         other: '%{count} meses'
       about_x_years:
-        one: 'aproximadamente 1 ano'
-        other: 'aproximadamente %{count} anos'
+        one: '1 ano'
+        other: '%{count} anos'
       over_x_years:
         one: 'mais de 1 ano'
         other: 'mais de %{count} anos'
